@@ -9,9 +9,7 @@ const user = getUser();
 //     - check if there is not a user and if so do the redirect
 if (!user) {
     const base =
-        location.pathname === '/' || location.pathname === '/solutions-web/user-auth/'
-            ? './'
-            : '../';
+        location.pathname === '/' || location.pathname === '/finishauth/user-auth/' ? './' : '../';
     //       redirect code: location.replace(`/auth/?redirectUrl=${encodeURIComponent(location)}`);
     location.replace(`${base}auth/?redirectUrl=${encodeURIComponent(location)}`);
 }
