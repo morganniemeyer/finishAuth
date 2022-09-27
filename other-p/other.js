@@ -1,7 +1,5 @@
-import { getUser, signOutUser } from '../fetch-utils.js';
 import '../auth/user.js';
-
-const user = getUser();
+import { signOutUser } from '../fetch-utils.js';
 
 const signOutLink = document.getElementById('sign-out-link');
 
